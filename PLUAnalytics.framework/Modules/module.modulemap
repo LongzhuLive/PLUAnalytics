@@ -1,0 +1,6 @@
+framework module PLUAnalytics {
+  umbrella header "PLUAnalytics.h"
+
+  export *
+  module * { export * }
+}
