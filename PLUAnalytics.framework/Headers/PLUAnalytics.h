@@ -18,6 +18,7 @@ typedef NS_ENUM(NSUInteger, eReportPolicy) {
 
 extern NSNotificationName const PLUAnalyticsAppWillEnterForegroundNotification;
 extern NSNotificationName const PLUAnalyticsAppDidEnterBackgroundNotification;
+extern NSNotificationName const PLUAnalyticsAppNetworkDidChangedReachablityNotification; // 网络发生变化且有网络通知
 
 typedef NSString * PLUAnalyticsSocialActionString;
 
@@ -115,6 +116,10 @@ extern PLUAnalyticsSocialTypeString const PLUAnalyticsSocialTypeYxtimeline;     
  @param roomId cd   房间ID
  */
 + (void)enterRoom:(NSString *)roomId;
+
++ (void)enterRoom:(NSString *)roomId
+       attributes:(NSDictionary *)attributes;
+
 
 /**
  退出房间停止发送心跳
