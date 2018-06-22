@@ -96,6 +96,9 @@ extern PLUAnalyticsSocialTypeString const PLUAnalyticsSocialTypeYxtimeline;     
 /**openUDID 如果没有获取到会返回 @“-1”*/
 @property(nonatomic, readonly, copy)NSString *openUDID;
 
+/**当前显示的页面名称，如果不填默认为@“”*/
+@property(nonatomic, copy)NSString *currPageName;
+
 
 //  配置用户信息
 - (void)setMemeberUserInfo:(NSDictionary *)userInfo;
